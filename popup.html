@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      width: 220px;
+      font-family: Arial, sans-serif;
+      padding: 12px;
+      text-align: center;
+      background-color: #f7f9fa;
+      margin: 0;
+    }
+    h3 {
+      margin: 0 0 12px 0;
+      font-size: 15px;
+      color: #333;
+    }
+    .btn-container {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      color: white;
+      font-size: 13px;
+      transition: background 0.2s;
+    }
+    #saveBtn {
+      background-color: #34a853;
+    }
+    #saveBtn:hover {
+      background-color: #2d8d47;
+    }
+    #loadBtn {
+      background-color: #4285f4;
+    }
+    #loadBtn:hover {
+      background-color: #3367d6;
+    }
+    #status {
+      margin-top: 10px;
+      font-size: 12px;
+      font-weight: bold;
+      color: #333;
+      white-space: pre-line;
+    }
+  </style>
+</head>
+<body>
+  <h3>Менеджер вкладок</h3>
+  <div class="btn-container">
+    <button id="saveBtn">💾 Сохранить в файл</button>
+    <button id="loadBtn">📂 Загрузить из файла</button>
+  </div>
+  <!-- Скрытый инпут для выбора файла при загрузке -->
+  <input type="file" id="fileInput" accept=".txt" style="display: none;">
+  <div id="status"></div>
+  <script src="popup.js"></script>
+</body>
+</html>

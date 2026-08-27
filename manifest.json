@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Менеджер вкладок (Сохранение и Загрузка)",
+  "version": "1.0",
+  "description": "Сохраняет вкладки в текстовый файл и восстанавливает их обратно",
+  "permissions": ["tabs"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "128": "icon.png"
+  }
+}
